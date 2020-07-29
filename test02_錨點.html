@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./javascript/jquery.paroller.min.js"></script>
+    <script src="./javascript/jquery.min.js"></script>
+
+<style>
+    body{
+        background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    }
+</style>
+
+    <script>
+
+        $(function () {
+            $('#b1').click(function () {
+                $('html,body').animate({ scrollTop: $('#bn1').offset().top }, "toggle");
+                return false;
+            });
+        });
+        $(function () {
+            $('#b2').click(function () {
+                $('html,body').animate({ scrollTop: $('#bn2').offset().top }, "show",);
+                return false;
+            });
+        });
+    </script>
+
+
+
+</head>
+
+<body>
+
+    <a href="" id="b1">按鈕A</a>
+    
+    
+    
+    <a href="#" id="b2">按鈕B</a>
+    <div style="height: 3000px;"></div>
+
+
+
+    區塊A錨點<a id="bn1"></a>
+    <div>區塊A內文區塊A內文區塊A內文區塊A內文區塊A內文區塊A內文</div>
+    區塊B錨點<a id="bn2"></a>
+    <div>區塊B內文區塊B內文區塊B內文區塊B內文區塊B內文區塊B內文</div>
+</body>
+
+</html>

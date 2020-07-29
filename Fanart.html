@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./javascript/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+
+    <!-- 小球 -->
+    <link rel="stylesheet" href="css/ballAni.css">
+
+    <!-- 動畫樣式 -->
+    <link rel="stylesheet" href="css/loadAni.css">
+    <link rel="stylesheet" href="css/loadAni_02.css">
+
+
+    <!-- 目錄 -->
+    <link rel="stylesheet" href="./css/navBar.css">
+
+    <!-- 本身 -->
+    <link rel="stylesheet" href="./css/fanart.css">
+
+
+
+    <!-- 燈箱 -->
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <script src="./javascript/ligjtbox.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <!-- 球球動畫 -->
+    <div id="LogoID">
+        <div id="Logo_Frame">
+            <div id="Logo_HueID"><img src="image/Logo/Logo_Color.png" alt="" id="Logo_ColorID"></div>
+            <div id="Logo_CircleID"><img src="image/Logo/Logo_Circle.png" alt="" id="Logo_Circle_imgID">
+                <div id="Logo_EyeID"><img src="image/Logo/Logo_Face_01.png" alt=""></div>
+                <div id="Logo_MouthID"><img src="image/Logo/Logo_Mouth_01.png" alt=""></div>
+            </div>
+            <div id="Logo_ShadowID"><img src="image/Logo/Logo_Shadow.png" alt="" id="Logo_Shadow_imgID"></div>
+            <div id="Logo_NameID"><img src="image/Logo/Logo_Name.png" alt=""></div>
+
+        </div>
+    </div>
+
+
+
+
+    <div>
+
+
+        <!-- 導覽列 -->
+        <div class="row navigation " onclick="">
+            <!-- 漢堡 -->
+            <div id="hamb-icon" class="" onclick="hamb(),navClick()">
+                <div></div>
+            </div>
+            <div class="navText">
+                <a href="Index.html">
+                    <div class="navInfo"> <span>HOME</span></div>
+                </a>
+                <a href="" id="a_About">
+                    <div class="navInfo"> <span>ABOUT ME</span></div>
+                </a>
+                <a href="">
+                    <div class="navInfo"> <span>GALLERY</span></div>
+                </a>
+                <a href="Contact.html">
+                    <div class="navInfo"> <span>CONTACT ME</span></div>
+                </a>
+            </div>
+
+        </div>
+        <!-- 導覽列結束 -->
+
+
+        <div class="contentFrame">
+            <div><img class="fanArt_Logo" src="./image/BT21/FanartLogo_Pic.png" alt=""></div>
+            <div class="fanArt_P1" id="fanArt_P1_adj">
+                <div id="P1_filter"></div>
+                <div id="P1_gray">
+                    <div id="P1_Inner">
+                        <div id="P1_Shadow"></div>
+                        <!-- <img id="bannerImg" src="./image/BT21/FanartBanner_Pic.png" alt=""> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第二頁 簡介-->
+            <div class="fanArt_P2 pad-10" id="P2_textArea">
+                <div>
+                    將LINESTORE所設計的BT21角色製作為3D同人創作。
+
+                    <div class="adobe"><img src="./image/webUse/Adobe.png" alt=""></div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- 第三頁 Micdrop-->
+            <div class="fanArt_P3 pad-10" id="fanP3_ID"><img src="./image/BT21/FanartP3-1_Pic.png" alt=""></div>
+
+
+            <!-- 第四頁 台灣場-->
+            <div class="fanArt_P4 pad-10">
+                <div class="row ">
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-1_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-2_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-3_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-4_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-5_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-6_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-7_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP4-8_Pic.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 第五頁 Daydream-->
+            <div class="fanArt_P5 pad-10 bg-warning">
+                <video  autoplay="true" loop="true" controls><source src="./image/BT21/DayDream.mp4" type="video/mp4"></video>
+                <!-- <img src="./image/BT21/FanartP5-1_Pic.png" alt=""> -->
+            </div>
+
+
+
+            <!-- 第六頁 小卡-->
+            <div class="fanArt_P6 pad-10" id="fanP6_ID">
+                <div class="row">
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP6-1_Pic.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP6-2_Pic.png" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP6-3_Pic.jpg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="./image/BT21/FanartP6-4_Pic.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="fanArt_P7 p-0" id="fanP7_ID">
+                <!-- <img src="./image/BT21/FanartP7-1_Pic.JPG" alt=""> -->
+            </div>
+
+
+            <!-- 第八頁 Cooky-->
+            <div class="fanArt_P8 pad-10">
+                <img src="./image/BT21/FanartP8-1_Pic.jpg" alt="">
+            </div>
+
+
+            <!-- 第九頁 方形卡-->
+            <div class="fanArt_P9 pad-10" id="fanP9_ID">
+                <div class="row ">
+                    <div class="col-4">
+                        <img src="./image/BT21/FanartP9-1_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-4">
+                        <img src="./image/BT21/FanartP9-2_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-4">
+                        <img src="./image/BT21/FanartP9-3_Pic.png" alt="">
+
+                    </div>
+
+
+                    <div class="col-4">
+                        <img src="./image/BT21/FanartP9-4_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-4">
+                        <img src="./image/BT21/FanartBanner_Pic.png" alt="">
+
+                    </div>
+                    <div class="col-4">
+                        <img src="./image/BT21/FanartP9-6_Pic.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 第十頁 4期-->
+    <div class="fanArt_P10 pad-10  bg-warning">
+        <video  autoplay="true" loop="true" controls><source src="./image/BT21/Muster.mp4" type="video/mp4"></video>
+    </div>
+
+
+    <!-- 第十一頁 Mono-->
+    <div class="fanArt_P11 pad-10">
+        <img src="./image/BT21/FanartP11-1_Pic.png" alt="">
+    </div>
+    </div>
+
+
+    <div id="copyright">
+        <div>©2020 ALLISON CHEN</div>
+        <a href="https://www.facebook.com/Allison801107?ref=bookmarks" target="_blank">
+            <img class="copyrightIcon" src="./image/webUse/Facebook_Pic.png" alt=""></a>
+
+        <a href="https://twitter.com/allison801107">
+            <img class="copyrightIcon" src="./image/webUse/Twitter_Pic.png" alt="" target="_blank"></a>
+
+        <a href="https://www.instagram.com/allisonchen1107/?hl=zh-tw">
+            <img class="copyrightIcon" src="./image/webUse/IG_Pic.png" alt="" target="_blank"></a>
+    </div>
+
+    </div>
+
+
+
+    <!-- <script src="./javascript/mouseAni.js"></script> -->
+    <script src="./javascript/addClass.js"></script>
+    <script src="./javascript/fanArtOP_addClass.js"></script>
+
+
+</body>
+
+</html>

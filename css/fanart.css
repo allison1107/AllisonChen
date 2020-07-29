@@ -1,0 +1,332 @@
+body {
+    background-color: #F6F6F6;
+}
+
+.contentFrame {
+    text-align: center;
+}
+
+/* padding調整 */
+
+.pad-10 {
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+/* nav調整 */
+
+#hamb-icon:after, #hamb-icon:before, #hamb-icon div {
+    background-color: rgb(75, 75, 75);
+}
+
+.navigation a {
+    color: rgb(75, 75, 75);
+}
+
+.navInfo:hover span {
+    color: rgb(252, 194, 87);
+}
+
+/* 文字LOGO */
+
+.fanArt_Logo {
+    height: 50px;
+    margin-top: 100px;
+}
+
+/* 個別區塊 */
+
+div[class*=fanArt_] {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 900px;
+    overflow: hidden;
+    display: flex;
+}
+
+/* 圖 */
+
+div[class*=fanArt_] img {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    object-fit: cover;
+    /* transform-style: preserve-3d;
+    transform: rotate3d(0, 1, 0, 10deg);   */
+}
+
+
+
+video {
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    object-fit: cover;
+}
+
+/* -------------第一頁--------------- */
+
+#fanArt_P1_adj {
+    margin-top: 10px;
+    background-image: url(../image/BT21/FanartBanner_Pic.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    overflow: hidden;
+}
+
+
+#P1_gray {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale(1) brightness(.5) blur(2px);
+    display: flex;
+}
+
+#P1_Inner {
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    width: 70%;
+    height: 60%;
+    position: relative;
+    overflow: hidden;
+}
+
+#P1_Shadow {
+    background-image: url(../image/BT21/FanartBanner_Pic.png);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.7) inset, 0px 0px 80px rgb(0, 0, 0, 0.3) inset;
+    z-index: 10;
+}
+
+/* -------------第二頁介紹--------------- */
+
+#P2_textArea {
+    height: 500px;
+    flex-direction: column;
+}
+
+.fanArt_P2>div {
+    height: 100px;
+    margin: auto;
+}
+
+.adobe {
+    height: 100px;
+    width: 70%;
+    margin: auto;
+}
+
+.adobe img {
+    object-fit: contain;
+    /* height: 100%; */
+}
+
+/* -------------第三頁--------------- */
+
+#fanP3_ID {
+    height: 800px;
+    background-color: #2F2F2F;
+    display: flex;
+    align-items: center;
+}
+
+.fanArt_P3 img {
+    height: 90%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+}
+
+
+
+/* -------------第四頁--------------- */
+
+
+.fanArt_P4 .row {
+    width: 110%;
+    height: 50%;
+}
+
+.fanArt_P4 .row>div {
+    margin: auto;
+    padding: 5px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fanArt_P4 img {
+    object-fit: cover;
+    object-position: top;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.fanArt_P4 img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* -------------第五頁--------------- */
+
+.fanArt_P5 {
+    background-image: url(../image/BT21/FanartP5-1_BG.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+}
+
+.fanArt_P5 video {
+    margin: auto;
+    height: 80%;
+    width: 90%;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+}
+
+/* -------------第六頁--------------- */
+
+#fanP6_ID {
+    height: 700px;
+}
+
+.fanArt_P6>div {
+    width: 100%;
+   
+}
+
+.fanArt_P6>div>div {
+    padding: 5px;
+    overflow: hidden;
+
+}
+
+.fanArt_P6 img {
+    height: 100%;
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+
+}
+
+
+.fanArt_P6 img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+
+/* -------------第七頁--------------- */
+
+#fanP7_ID {
+    height: 600px;
+}
+
+.fanArt_P7 {
+    background-image: url(../image/BT21/FanartP7-2_Pic.jpg);
+    /* background-color: rosybrown; */
+    overflow: hidden;
+    position: relative;
+    background-attachment: fixed;
+    background-position: bottom;
+    background-size: cover;
+}
+
+.fanArt_P7 img {
+    height: 100%;
+    object-fit: contain;
+    position: fixed;
+    top: 0px;
+    z-index: -1;
+    overflow: hidden;
+}
+
+/* -------------第八頁--------------- */
+
+.fanArt_P8>div {
+    width: 100%;
+
+}
+
+.fanArt_P8 img {
+    height: 100%;
+}
+
+
+/* -------------第九頁--------------- */
+
+.fanArt_P9 {
+    background-color: #2F2F2F;
+}
+
+#fanP9_ID {
+    height: 1000px;
+}
+
+.fanArt_P9 .row>div {
+    margin: auto;
+    padding: 5px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.fanArt_P9 img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.fanArt_P9 .row {
+    width: 110%;
+    height: 50%;
+}
+
+.fanArt_P9 img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    
+}
+
+/* -------------第十頁--------------- */
+
+.fanArt_P10 {
+    background-image: url(../image/BT21/FanartP10-1_BG.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.fanArt_P10>video {
+    margin: auto;
+    height: 80%;
+    width: 90%;
+    box-shadow: 0px 0px 20px rgb(0, 0, 0, 0.5);
+}
+
+/* -------------第十一頁--------------- */
+
+.fanArt_P11>div {
+    width: 100%;
+}
+
+.fanArt_P11 img {
+    box-shadow: 0px 0px 10px rgb(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 576px) {
+    .adobe {
+        width: 100%;
+    }
+    .pad-10 {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+video{
+    border: none;
+}

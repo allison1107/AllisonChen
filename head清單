@@ -1,0 +1,91 @@
+
+    <script src="./javascript/jquery.min.js"></script>
+
+<!-- bootstrap -->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<!-- 小球 -->
+<link rel="stylesheet" href="css/ballAni.css">
+
+    <!-- 動畫樣式 -->
+    <link rel="stylesheet" href="css/loadAni.css">
+    <link rel="stylesheet" href="css/loadAni_02.css">
+
+
+<!-- 目錄 -->
+<link rel="stylesheet" href="./css/navBar.css">
+
+
+<!-- 本身 -->
+<link rel="stylesheet" href="./css/Index.css">
+
+<!-- 跟著滑鼠移動 -->
+  <script src="./javascript/Mouse_ani.js"></script>
+
+<!-- 加入class -->
+<script src="./javascript/AddClass.js"></script>
+
+
+<!-- 燈箱 -->
+<link rel="stylesheet" href="./css/lightbox.css">
+<script src="./javascript/ligjtbox.js"></script>
+
+
+
+
+
+        <script src="./javascript/mouseAni.js"></script>
+        <script src="./javascript/addClass.js"></script>
+
+
+
+
+    <!-- 球球動畫 -->
+    <div id="LogoID">
+        <div id="Logo_Frame">
+            <div id="Logo_HueID"><img src="image/Logo/Logo_Color.png" alt="" id="Logo_ColorID"></div>
+            <div id="Logo_CircleID"><img src="image/Logo/Logo_Circle.png" alt="" id="Logo_Circle_imgID">
+                <div id="Logo_EyeID"><img src="image/Logo/Logo_Face_01.png" alt=""></div>
+                <div id="Logo_MouthID"><img src="image/Logo/Logo_Mouth_01.png" alt=""></div>
+            </div>
+            <div id="Logo_ShadowID"><img src="image/Logo/Logo_Shadow.png" alt="" id="Logo_Shadow_imgID"></div>
+            <div id="Logo_NameID"><img src="image/Logo/Logo_Name.png" alt=""></div>
+
+        </div>
+    </div>
+
+
+             <!-- 導覽列 -->
+            <div class="row navigation">
+                <div class="navInfo"> <span>HOME</span></div>
+                <div class="navInfo"> <span>ABOUT ME</span></div>
+                <div class="navInfo"> <span>GALLERY</span></div>
+                <div class="navInfo"> <span>CONTACT ME</span></div>
+            </div>
+
+            <div id="copyright">
+            <div>©2020 ALLISON CHEN</div>
+            <img class="copyrightIcon" src="./image/webUse/Facebook_Pic.png" alt="">
+            <img class="copyrightIcon" src="./image/webUse/Twitter_Pic.png" alt="">
+            <img class="copyrightIcon" src="./image/webUse/IG_Pic.png" alt="">
+        </div>
+
+
+
+
+
+                <div id="copyright">
+            <div>©2020 ALLISON CHEN</div>
+            <a href="https://www.facebook.com/Allison801107?ref=bookmarks" target="_blank">
+                <img class="copyrightIcon" src="./image/webUse/Facebook_Pic.png" alt=""></a>
+
+            <a href="https://twitter.com/allison801107">
+                <img class="copyrightIcon" src="./image/webUse/Twitter_Pic.png" alt="" target="_blank"></a>
+
+            <a href="https://www.instagram.com/allisonchen1107/?hl=zh-tw">
+                <img class="copyrightIcon" src="./image/webUse/IG_Pic.png" alt="" target="_blank"></a>
+        </div>
+
+
+
+

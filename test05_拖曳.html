@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="css/loadAni.css">
+    <link rel="stylesheet" href="css/loadAni_02.css">
+    <script src="./javascript/jquery.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 外 */
+        #boxOut {
+            margin: auto;
+            height: 800px;
+            width: 100px;
+            overflow: hidden;
+            display: flex;
+            position: relative;
+
+        }
+
+        /* 內 */
+        #box {
+            margin: auto;
+            background-color: red;
+            width: 100px;
+            height: 100px;
+            position: absolute;
+        }
+
+        img {
+            width: 100%;
+            object-fit: contain;
+            position: absolute;
+        }
+
+        #inner {
+            width: 30px;
+            height: 30px;
+            position: absolute;
+    
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div id="boxOut">
+        <div id="box">
+            <div id="inner"> </div>
+        </div>
+    </div>
+    <!-- <img src="./image/BT21/pt.jpg" alt=""> -->
+    <script>
+        $("#box").css('background-image', 'url(image/BT21/pt.jpg)');
+        $("#box").css('background-position', 'center');
+        $("#box").css('background-size', 'contain');
+
+        $(document.body).addClass('cursorPoint');
+        var box = document.getElementById('box');
+        var mx, my, //滑鼠位置
+            ox, oy; //滑鼠按下的物件的位置
+        var e = function (event) {
+            if (!event) {
+                event = window.event;
+                event.target = event.srcElement;
+                event.layerY = event.offsetY;
+            }
+            event.my = event.pageY || event.clientY + document.body.scrollTop;
+            return event;
+        };
+        // 滑鼠按下
+        document.onmousedown = function (event) {
+            event = e(event);
+            o = event.target;
+            oy = parseInt(box.offsetTop);
+            my = event.my;
+            document.onmousemove = move;
+            document.onmouseup = stop;
+        };
+        //移動
+        function move(event) {
+            event = e(event);
+            var boxTop = oy + event.my - my;
+            box.style.top = oy + event.my - my + 'px';
+            // 滑到某處自動產生動畫 
+            if (boxTop <-300) {
+                $("#box").css('backgroundColor', 'green');
+                $("#box").addClass('animate__animated animate__backOutDown');
+            } else if (boxTop > 0) {
+                cardOut.style.top = `${0}px`;
+            }
+            console.log(event.target);
+        }
+        //放開
+        function stop(event) {
+            event = e(event);
+            var boxTop = oy + event.my - my;
+            // 放開動畫
+            $("#box").addClass('animate__animated animate__backOutDown');
+            if (boxTop <= -250) {
+                $("#box").css('backgroundColor', 'blue');
+                cardOut.style.top = `${0}px`;
+                $("#box").removeClass('animate__animated animate__backOutDown');
+            }
+            //放開
+            o = document.onmousemove = document.onmouseup = null;
+        }
+    </script>
+</body>
+
+
+
+</html>

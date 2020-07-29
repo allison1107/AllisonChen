@@ -1,0 +1,134 @@
+body {
+    font-size: 16px;
+    line-height: 24px;
+    overflow: hidden;
+}
+
+/* 大框架 */
+
+#contaceFrame {
+    padding: 1px 0px;
+    background-image: url("../image/webUse/ContactBG_Pic.png");
+    background-size: cover;
+    background-attachment: fixed;
+   
+}
+
+/* 表單內容 */
+
+#formcontent {
+    background-color: #F6F6F6;
+    height: 800px;
+    margin: 100px 15%;
+    margin-bottom: 10vh;
+    display: flex;
+    align-items: center;
+    box-shadow: 0px 0px 50px rgb(0, 0, 0, 0.2);
+}
+
+/* 內容div個別調整 */
+
+#formcontent>div {
+    height: 100%;
+    text-align: center;
+    padding: 0px;
+}
+
+/* 左方圖 */
+
+#L_img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* #L_Top {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    clip-path: circle(0% at 100% 100%);
+    transition: cubic-bezier(0,.5,.54,1.33) 0.3s;
+    background-color: rgb(195, 149, 255);
+    mix-blend-mode: soft-light;
+}
+
+#L_img:hover+#L_Top {
+    clip-path: circle(200% at 100% 100%);
+} */
+
+/* 右方LOGO */
+
+#R_logo {
+    height: 50px;
+}
+
+/* 右方區塊 */
+
+#R_section {
+    padding: 50px 0px;
+}
+
+form {
+    height: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #B082BD;
+    padding: 0px;
+    margin-top: 60px;
+}
+
+.form-group {
+    width: 70%;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.form-control:first-child, .input-group-text, textarea {
+    height: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+label {
+    padding: 0px 10px;
+    font-weight: bolder;
+}
+
+.input-group {
+    border-bottom: #B082BD 1px solid;
+    padding: 0px;
+    margin: 0px 10px;
+}
+
+.form-control {
+    border-radius: 0;
+    padding: 0px;
+}
+
+#textarea {
+    border: #B082BD 1px solid;
+    margin: 0px 10px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+i {
+    color: #B082BD
+}
+
+input::-webkit-input-placeholder {
+    color: rgb(197, 197, 197) !important/* 更改placeholder的字體顏色  */
+}
+
+#submitBTN {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-radius: 20px;
+    background-color: #B082BD;
+    border: none;
+    /* box-shadow: 0px -5px 0px inset rgb(143, 108, 153,0.8) ; */
+}
+
+#submitBTN:hover {
+    filter: brightness(1.2) saturate(0.7);
+}

@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.row {
+    margin: 0px;
+}
+
+/* 個別區塊調整 */
+
+.Index_P1, .Index_P2, .Index_P3, .Index_P4 {
+    color: #F6F6F6;
+    height: 900px;
+    width: 100%;
+}
+
+.Index_P1 {
+    height: 1000px;
+}
+
+.Index_BG {
+    background-image: url("../image/webUse/IndexBG_Pic.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-size: cover;
+}
+
+/* 圖片row區塊 */
+
+.indexPic_Sec {
+    /* transform: translateY(-15%); */
+    display: flex;
+    height: 80%;
+    margin: auto;
+}
+
+/* 圖片中 */
+
+.indexPic_Center {
+    display: flex;
+    margin-top: 0px;
+}
+
+/* 圖片個別調整 */
+
+.indexPic_Adj {
+    width: 100%;
+    display: flex;
+    /* padding: 0px 50px; */
+}
+
+/* 右圖 */
+
+#indexRight_Pic {
+    background: url(../image/webUse/IndexKoya_Pic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-style: preserve-3d;
+}
+
+#indexRight_Pic02 {
+    width: 100%;
+    height: 100%;
+    background: url(../image/webUse/IndexKoya02_Pic.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 0px 50px rgb(255, 255, 255, 0.1));
+    /* backdrop-filter: blur(2px); */
+    /* clip-path: circle(10% at 0% 0%); */
+}
+
+/* 左圖 */
+
+#indexPic {
+    margin: auto;
+    width: 100%;
+    object-fit: contain;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.3));
+}
+
+
+
+.contentFrame {
+    height: 100%;
+    width: 100%;
+    padding: 100px 15%;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.indexPic_Adj:first-child {
+    transform: scale(0.8);
+    transform-origin: left;
+ 
+}
+
+/* --------第二頁自我介紹---------- */
+
+.Index_P2 {
+    background-color: #AE92C1;
+}
+
+/* 左方圖 */
+
+img[src*="About_Pic"] {
+    height: 50%;
+    max-width: 100%;
+    object-fit: cover;
+    /* box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.2); */
+}
+
+img[src*="IndexHi_Pic"] {
+    height: 40px;
+}
+
+.aboutContent {
+    margin-top: 50px;
+}
+
+#About_Filter {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: grayscale() brightness(0.7) blur(4px);
+}
+
+#About_L {
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    background-image: url(../image/webUse/IMG_9639.JPG);
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4);
+}
+
+#About_L_Inner {
+    z-index: 2;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+    background-image: url(../image/webUse/IMG_9639.JPG);
+    /* clip-path: inset(0% 0% 0% 0%); */
+}
+
+
+#aboutUl{
+    white-space:nowrap;
+}
+
+#aboutUl h5{
+    margin-top: 20px;
+}
+
+#aboutUl li{
+    margin-left: 20px;
+}
+/* --------第三頁影片頁---------- */
+
+.Index_P3 {
+    background-image: url("../image/webUse/VideoBG_Pic.jpg");
+    /* background-attachment: fixed; */
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    background-position-x: center;
+    background-size: cover;
+    display: flex;
+    margin: auto;
+}
+
+.videoPage {
+    transform: scale(0.8);
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: drop-shadow(0px 0px 30px rgba(0, 0, 0, 0.5));
+}
+
+.videoPage>div {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+}
+
+/* 背景底圖 */
+
+#videoPic {
+    background-image: url(../image/webUse/Video_Pic.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+/* .Index_P3 img[src*="Video_Pic"] {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+/* 
+.videoPage>div:hover>img[src*="Video_Pic"] {
+    transform: scale(1.05);
+    transition: ease-out 0.4s;
+} */
+#videoPic:hover {
+    transform: scale(1.05);
+    transition: ease-out 0.4s;
+
+}
+
+/* 播放ICON */
+
+.playIcon {
+    zoom: 2;
+    margin: auto;
+    z-index: 10;
+    filter: brightness(.95) blur(0.2px);
+}
+
+.playIcon:hover {
+    cursor: pointer;
+    filter: brightness(1) blur(0.2px);
+}
+
+#demoReel {
+    background-color: rgb(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 10000;
+}
+
+/* --------第四頁作品頁---------- */
+
+.Index_P4 {
+    background-image: url(../image/webUse/WorksBG_Pic.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-attachment: fixed;
+}
+
+.workSec {
+    display: flex;
+    align-items: center;
+}
+
+.workSec a {
+    text-decoration: none;
+    color: #F6F6F6;
+}
+
+
+.intro {
+    /* margin: 5px; */
+    padding: 5px;
+    height: 80%;
+    overflow: hidden;
+}
+
+.intro>a>div {
+    height: 100%;
+    width: 100%;
+}
+
+.intro img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.works {
+    padding: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    font-weight: bolder;
+    height: 100%;
+}
+
+.works>div {
+    z-index: 10;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.works:hover img {
+    animation-name: work_hover_S;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.works:hover hr {
+    margin-top: 5px;
+    border: #AE92C1 1.5px solid;
+    animation-name: hr_ani;
+    animation-duration: 1.3s;
+    animation-fill-mode: forwards;
+}
+
+.works:hover>div {
+    text-align: center;
+    /* border: 1px solid #fafafa; */
+    background-color: rgba(22, 22, 22, 0.7);
+    animation-name: work_hover_O;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    backdrop-filter: blur(3px);
+}
+
+.works:first-child img{
+    right: 0;
+}
+
+
+/* 作品頁動畫 */
+
+@keyframes work_hover_O {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.9;
+    }
+}
+
+@keyframes work_hover_S {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes hr_ani {
+    0% {
+        transform: scalex(0);
+    }
+    100% {
+        transform: scalex(.6);
+    }
+}
+
+.intro:nth-child(1) {
+    transform: translateY(-30px);
+}
+
+.intro:nth-child(1) img {
+    object-position: 55%;
+}
+
+.intro:nth-child(1)>div, .intro:nth-child(2)>div {
+    height: 100%;
+}
+
+.intro:nth-child(3) {
+    transform: translateY(-60px);
+}
+
+.intro:nth-child(4) {
+    transform: translateY(-30px);
+}
+
+.intro:nth-child(3)>div, .intro:nth-child(4)>div {
+    height: 50%;
+    margin-bottom: 10px;
+}
+
+img[src*=Icon] {
+    width: 50px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+
+
+/* loading動畫 */
+
+body {
+    animation-name: overflow_Ani;
+    animation-duration: 1s;
+}
+
+@keyframes overflow_Ani {
+    0% {
+        overflow: hidden;
+    }
+    80% {
+        overflow: hidden;
+    }
+    100% {
+        overflow: auto;
+    }
+}
+
+#indexOpen {
+    animation-name: indexOpen_Ani;
+    animation-duration: 1s;
+}
+
+#loading {
+    z-index: -10;
+    background-image: url("../image/webUse/WorksBG_Pic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100vh;
+    animation-name: loading_Ani;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    position: fixed;
+    display: flex;
+}
+
+#loading img {
+    margin: auto;
+    transform: scale(1);
+}
+
+@keyframes indexOpen_Ani {
+    0% {
+        opacity: 0;
+    }
+    80% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes loading_Ani {
+    0% {
+        visibility: visible;
+    }
+    90% {
+        visibility: visible;
+    }
+    100% {
+        visibility: hidden;
+    }
+    100% {
+        visibility: hidden;
+    }
+}
+/* 響應式 */
+
+@media screen and (max-width: 992px) {
+
+    .indexPic_Center {
+        flex-direction: row;
+
+    } 
+    .Index_P1 {
+        height: 700px;
+    }
+
+
+
+    .indexPic_Adj:first-child {
+        transform: scale(0.8);
+        transform-origin: left;
+     
+    }
+
+    .contentFrame {
+        padding: 100px 5%;
+
+    }
+
+    #About_L{
+        display: block;
+        background-color: rgb(42, 68, 42);
+    }
+
+    #aboutUl{
+        padding-left: 0px;
+    }
+
+ 
+}
+
+@media screen and (max-width: 576px) {
+    .indexPic_Center {
+        flex-direction: column;
+
+    } 
+    .indexPic_Adj {
+        padding-top: 100px;
+        height: 280px;
+        width: 100%;
+        display: flex;
+        /* padding: 0px 50px; */
+    }
+    .indexPic_Adj:first-child {
+        transform: scale(0.8);
+        transform-origin: center;
+    }
+    #About_L{
+        display: none;
+        background-color: rgb(42, 68, 42);
+    }
+
+    
+    #aboutUl{
+        white-space:normal;
+        font-size: 13px;
+    }
+    
+
+}

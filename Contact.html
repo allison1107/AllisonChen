@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <!-- <script src="./javascript/jquery.min.js"></script> -->
+  <!-- bootstrap -->
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- 小球 -->
+  <link rel="stylesheet" href="css/ballAni.css">
+
+  <!-- 動畫樣式 -->
+  <link rel="stylesheet" href="css/loadAni.css">
+  <link rel="stylesheet" href="css/loadAni_02.css">
+
+  <link rel="stylesheet" href="./css/navBar.css">
+  <link rel="stylesheet" href="./css/contact.css">
+</head>
+
+<body>
+  <!-- 球 -->
+  <div id="LogoID">
+    <div id="Logo_Frame">
+      <div id="Logo_HueID"><img src="image/Logo/Logo_Color.png" alt="" id="Logo_ColorID"></div>
+      <div id="Logo_CircleID"><img src="image/Logo/Logo_Circle.png" alt="" id="Logo_Circle_imgID">
+        <div id="Logo_EyeID"><img src="image/Logo/Logo_Face_01.png" alt=""></div>
+        <div id="Logo_MouthID"><img src="image/Logo/Logo_Mouth_01.png" alt=""></div>
+      </div>
+      <div id="Logo_ShadowID"><img src="image/Logo/Logo_Shadow.png" alt="" id="Logo_Shadow_imgID"></div>
+      <div id="Logo_NameID"><img src="image/Logo/Logo_Name.png" alt=""></div>
+
+    </div>
+  </div>
+
+
+  <div id="contaceFrame" class="mt-0">
+
+    
+    <!-- 導覽列 -->
+    <div class="row navigation " onclick="">
+
+      <!-- 漢堡 -->
+      <div id="hamb-icon" class="" onclick="hamb(),navClick()">
+        <div></div>
+      </div>
+
+      <div class="navText">
+
+        <a href="Index.html">
+          <div class="navInfo"> <span>HOME</span></div>
+        </a>
+        <a href="Index.html#aboutMe">
+          <div class="navInfo"> <span>ABOUT ME</span></div>
+        </a>
+        <a href="Index.html#gallery">
+          <div class="navInfo"> <span>GALLERY</span></div>
+        </a>
+        <a href="Contact.html">
+          <div class="navInfo"> <span>CONTACT ME</span></div>
+        </a>
+      </div>
+
+    </div>
+    <!-- 導覽列結束 -->
+
+    
+
+
+    <!-- 內容物 -->
+    <div class="row" id="formcontent">
+      <div class="col-5 d-flex">
+        <img id="L_img" src="./image/webUse/ContaceL_Pic.png" alt="">
+        <div id="L_Top"></div>
+
+      </div>
+
+
+      <div class="col-7 ">
+        <div id="R_section">
+
+
+          <img id="R_logo" src="./image/webUse/ContaceLogo_Pic.png" alt="">
+          <form>
+            <div class="form-group ">
+              <label for="name">稱呼</label>
+              <div class="input-group">
+                <input id="name" name="name" placeholder="請留下您的稱呼方式" type="text" class="form-control">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="fa fa-user"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mail">E-MAIL</label>
+              <div class="input-group">
+                <input id="mail" name="mail" placeholder="請留下信箱（必填）" type="text" class="form-control">
+                <div class="input-group-append">
+                  <div class="input-group-text">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="phone">電話</label>
+              <div class="input-group">
+                <input id="phone" name="phone" placeholder="請留下電話（非必填）" type="text" class="form-control">
+                <div class="input-group-append  ">
+                  <div class="input-group-text">
+                    <i class="fa fa-mobile-phone"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="textarea">留言內容：</label>
+              <textarea id="textarea" name="textarea" cols="40" rows="5" class="form-control"></textarea>
+            </div>
+            <div class="form-group text-center mb-0">
+              <button id="submitBTN" name="submit" type="submit" class="btn btn-dark">送出</button>
+              <button >送出2</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="copyright">
+    <div>©2020 ALLISON CHEN</div>
+    <img class="copyrightIcon" src="./image/webUse/Facebook_Pic.png" alt="">
+    <img class="copyrightIcon" src="./image/webUse/Twitter_Pic.png" alt="">
+    <img class="copyrightIcon" src="./image/webUse/IG_Pic.png" alt="">
+  </div>
+
+  <script src="./javascript/mouseAni.js"></script>
+  <script src="./javascript/addClass.js"></script>
+  <script src="./javascript/indexOpen.js"></script>
+
+</body>
+
+</html>

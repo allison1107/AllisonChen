@@ -1,0 +1,281 @@
+/* body{
+    background-color: lightseagreen;
+} */
+
+#LogoID img,#Logo_EyeID,#Logo_MouthID{
+    filter: drop-shadow(0 0 30px rgb(255, 255, 255,.5));
+}
+
+
+#LogoID {
+    z-index: 10;
+    /* 整個LOGO(控制對齊) */
+    margin-right: 80px;
+    margin-bottom: 120px;
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    transform: scale(0.2);
+    transform-origin: bottom right;
+    /* mix-blend-mode: luminosity; */
+}
+
+
+
+#Logo_Frame {
+    /* LOGO第一層（上下飄動） */
+    margin: auto;
+    margin-top: 500px;
+    position: relative;
+    animation-name: Logo_Frame_Ani;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+#Logo_Frame:hover>#Logo_CircleID {
+    /* （hover>彈跳） */
+    animation-name: Logo_Squeeze;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+#Logo_Frame:hover>#Logo_ShadowID {
+    /* (hover>影子) */
+    animation-name: Logo_Shadow_Ani;
+    animation-duration: 0.8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+#Logo_Frame:hover>#Logo_HueID {
+    /* (hover>改顏色) */
+    filter: hue-rotate(180deg)
+}
+
+#Logo_ColorID {
+    /* LOGO左方圈圈 */
+    animation-name: Logo_Color_Ani, Logo_Hue_Ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out, linear;
+}
+
+#Logo_CircleID{
+    /* LOGO右方圈圈的DIV（對位子） */
+    position: absolute;
+    top: 0px;
+    left: 250px;
+}
+
+#Logo_Circle_imgID,#Logo_Shadow_imgID{
+    /* LOGO右方圈圈圖 */
+    animation-name: Logo_FaceTurn_Ani;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+#Logo_ShadowID {
+    /* 影子圖 */
+    opacity: 80%;
+    position: absolute;
+    top: 10px;
+    left: 250px;
+}
+
+#Logo_NameID {
+    /* 姓名圖 */
+    border-top: 3px black solid;
+    padding: 20px 10px;
+    position: absolute;
+    top: 560px;
+    left: 100px;
+    margin: auto;
+
+}
+
+#Logo_EyeID>img, #Logo_MouthID>img {
+    /* 右方圈圈底圖 */
+    opacity: 0;
+}
+
+#Logo_EyeID {
+    /* 眼睛 */
+    position: absolute;
+    top: 170px;
+    left: 100px;
+    animation-name: Logo_EyeBlink_Ani, Logo_EyeTurn_Ani;
+    animation-duration: 1.5s, 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear, ease-out;
+}
+
+#Logo_MouthID {
+    /* 嘴巴 */
+    position: absolute;
+    top: 220px;
+    left: 165px;
+    animation-name: Logo_Mouth_Ani, Logo_EyeTurn_Ani;
+    animation-duration: 2s, 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear, ease-out;
+}
+
+@keyframes Logo_Frame_Ani {
+    /* LOGO上下飄動動畫 */
+    from {
+        transform: translateY(-25px);
+    }
+    to {
+        transform: translateY(25px);
+    }
+}
+
+@keyframes Logo_EyeBlink_Ani {
+    /* 眨眼動畫 */
+    0% {
+        background: url(../image/Logo/Logo_Face_01.png);
+    }
+    93% {
+        background: url(../image/Logo/Logo_Face_01.png);
+    }
+    97% {
+        background: url(../image/Logo/Logo_Face_02.png);
+    }
+    100% {
+        background: url(../image/Logo/Logo_Face_02.png);
+    }
+}
+
+@keyframes Logo_Mouth_Ani {
+    /* 講話動畫 */
+    0% {
+        background: url(../image/Logo/Logo_Mouth_01.png);
+        background-repeat: no-repeat;
+    }
+    20% {
+        background: url(../image/Logo/Logo_Mouth_01.png);
+        background-repeat: no-repeat;
+    }
+    25% {
+        background: url(../image/Logo/Logo_Mouth_02.png);
+        background-repeat: no-repeat;
+    }
+    35% {
+        background: url(../image/Logo/Logo_Mouth_02.png);
+        background-repeat: no-repeat;
+    }
+    40% {
+        background: url(../image/Logo/Logo_Mouth_01.png);
+        background-repeat: no-repeat;
+    }
+    45% {
+        background: url(../image/Logo/Logo_Mouth_02.png);
+        background-repeat: no-repeat;
+    }
+    60% {
+        background: url(../image/Logo/Logo_Mouth_02.png);
+        background-repeat: no-repeat;
+    }
+    65% {
+        background: url(../image/Logo/Logo_Mouth_01.png);
+        background-repeat: no-repeat;
+    }
+    100% {
+        background: url(../image/Logo/Logo_Mouth_01.png);
+        background-repeat: no-repeat;
+    }
+}
+
+@keyframes Logo_EyeTurn_Ani {
+    /* 眼睛左右飄動動畫 */
+    0% {
+        transform: translateX(0px);
+    }
+    40% {
+        transform: translateX(0px);
+    }
+    60% {
+        transform: translateX(-55px) translateY(-10px);
+    }
+    100% {
+        transform: translateX(-55px) translateY(-10px);
+    }
+}
+
+@keyframes Logo_FaceTurn_Ani {
+    /* 頭型改變動畫 */
+    0% {
+        transform: translateX(0px) scale(.92);
+    }
+    40% {
+        transform: translateX(0px) scale(.92);
+    }
+    60% {
+        transform: translateX(-30px) scaleX(.9) scaleY(.92) scalez(.92);
+    }
+    100% {
+        transform: translateX(-30px) scaleX(.9) scaleY(.92) scalez(.92);
+    }
+}
+
+@keyframes Logo_Color_Ani {
+    /* 顏色旋轉動畫 */
+    0% {
+        transform: rotatez(0deg);
+    }
+    40% {
+        transform: rotatez(0deg);
+    }
+    60% {
+        transform: rotatez(-90deg);
+    }
+    100% {
+        transform: rotatez(-90deg);
+    }
+}
+
+@keyframes Logo_Hue_Ani {
+    /* 改變色相動畫 */
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(180deg);
+    }
+}
+
+
+@keyframes Logo_Squeeze {
+    /* 伸展擠壓動畫 */
+    0% {
+        transform: scaleY(0.95) scaleX(1.2) translateY(0px) ;
+        transform-origin: bottom;
+    }
+    100% {
+        transform: scaleY(1.2) scaleX(1.05) translateY(-1300px) ;
+        transform-origin: bottom;
+    }
+}
+
+@keyframes Logo_Shadow_Ani {
+    /* 影子動畫 */
+    0% {
+        opacity: 80%;
+    }
+    50% {
+        opacity: 20%;
+    }
+    100% {
+        opacity: 5%;
+    }
+}

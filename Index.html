@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script src="./javascript/jquery.min.js"></script>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- 小球 -->
+    <link rel="stylesheet" href="css/ballAni.css">
+
+    <!-- 動畫樣式 -->
+    <link rel="stylesheet" href="css/loadAni.css">
+    <link rel="stylesheet" href="css/loadAni_02.css">
+
+    <!-- 燈箱 -->
+    <link rel="stylesheet" href="./css/lightbox.css">
+    <script src="./javascript/ligjtbox.js"></script>
+
+    <!-- 目錄 -->
+    <link rel="stylesheet" href="./css/navBar.css">
+
+    <!-- 本身 -->
+    <link rel="stylesheet" href="./css/index.css">
+
+
+
+
+
+
+</head>
+
+<body>
+
+    <div id="loading">
+        <img src="./image/webUse/loadingAni.svg" alt="">
+    </div>
+
+
+    <div id="indexOpen">
+        <!-- 球球動畫 -->
+        <div id="LogoID">
+            <div id="Logo_Frame">
+                <div id="Logo_HueID"><img src="image/Logo/Logo_Color.png" alt="" id="Logo_ColorID"></div>
+                <div id="Logo_CircleID"><img src="image/Logo/Logo_Circle.png" alt="" id="Logo_Circle_imgID">
+                    <div id="Logo_EyeID"><img src="image/Logo/Logo_Face_01.png" alt=""></div>
+                    <div id="Logo_MouthID"><img src="image/Logo/Logo_Mouth_01.png" alt=""></div>
+                </div>
+                <div id="Logo_ShadowID"><img src="image/Logo/Logo_Shadow.png" alt="" id="Logo_Shadow_imgID"></div>
+                <div id="Logo_NameID"><img src="image/Logo/Logo_Name.png" alt=""></div>
+
+            </div>
+        </div>
+
+        <!-- 首頁BG -->
+        <div class="Index_BG">
+
+
+            <!-- 導覽列 -->
+            <div class="row navigation " onclick="">
+                <!-- 漢堡 -->
+                <div id="hamb-icon" class="" onclick="hamb(),navClick()">
+                    <div></div>
+                </div>
+                <div class="navText">
+                    <a href="#" id="a_Home">
+                        <div class="navInfo"> <span>HOME</span><img src="./image/webUse/Home_Icon.png" alt=""></div>
+                    </a>
+                    <a href="#" id="a_About">
+                        <div class="navInfo"> <span>ABOUT ME</span><img src="./image/webUse/AboutMe_Icon.png" alt=""></div>
+                    </a>
+                    <a href="#" id="a_Gallery">
+                        <div class="navInfo"> <span>GALLERY</span><img src="./image/webUse/Work_Icon.png" alt=""></div>
+                    </a>
+                    <a href="Contact.html">
+                        <div class="navInfo"> <span>CONTACT ME</span><img src="./image/webUse/Contact_Icon.png" alt=""></div>
+                    </a>
+                </div>
+
+            </div>
+            <!-- 導覽列結束 -->
+
+
+
+            <!-- 第一頁 -->
+            <div class="Index_P1" id="home">
+
+                <div class="row indexPic_Sec">
+                    <div class=" col-lg-2 col-1"></div>
+
+                    <!-- 中間圖 -->
+                    <div class="col-lg-8 col-10 indexPic_Center">
+                        <div class="indexPic_Adj"><img id="indexPic" src="./image/webUse/IndexLogo_Pic.png" alt="">
+                        </div>
+
+                        <div class="indexPic_Adj" id="indexRight_Pic">
+                            <div id="indexRight_Pic02"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-1"></div>
+                </div>
+            </div>
+            <!-- 第一頁結束 -->
+        </div>
+
+
+        <!-- 第二頁-個人簡介 -->
+        <div class="Index_P2" id="aboutMe">
+            <div class="row contentFrame">
+                <div class="col-5 d-flex " >
+                    <div id="About_L">
+                        <div id="About_Filter">
+                            <div id="About_L_Inner"></div>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="col-sm-7 col-12" id="About_R">
+                    <div class="col-12 text-center"><img src="./image/webUse/IndexHi_Pic.png" alt=""></div>
+                    <div class="col-12 aboutContent">
+                        <ul id="aboutUl">
+                            <h4>陳逸姍 YI-SHAN CHEN
+                            </h4>
+                            <h5>學歷</h5>
+                            <li>國立臺灣藝術大學　多媒體設計學系動畫藝術碩士班
+                                <br><small>TAIWAN UNIVERSITY OF ARTS, DEPARTMENT OF MULTIMEDIA
+                                    AND ANIMATION ARTS</small> </li>
+
+                            <h5>專案經歷</h5>
+                            <li>Xanthus冉色斯動畫股份有限公司－實習，擔任 3D 美術以及合成</li>
+                            <li>張恩光個人展覽《Alisu》－</li>
+                            <li>茉莉二手書店－社會企業宣導動畫製作</li>
+                            <li>2017台灣燈會在雲林 交通部觀光局－概念影片製作</li>
+                            <li>HFOXCONN鴻海科技集團 人力資源服務總處－實習，進行動畫專案製作</li>
+                            <li>《Blay - 航班資訊旅遊小幫手》APP－機場地圖製基作
+                            </li>
+                            <li>基隆擁恆文創園區《豬哥亮永恆時代展》－人物模型骨架綁定</li>
+                            <li>2018台灣燈會在嘉義 交通部觀光局－概念影片製作</li>
+                            <li>TURN UP 轉轉南港．東區門戶願景展－展覽概念動畫製作
+                            </li>
+                            <h5>得獎及公開展演</h5>
+                            <li>2014 青青春影展 Youth Film Festival 佳作－《SUGAR & SYRUP》</li>
+                            <li>金車藝術空間 「原生世力」學生聯合影展－《SUGAR & SYRUP》</li>
+                            <li>華山藝文中心「DOMAS」－《SUGAR & SYRUP》</li>
+                            <li>國立臺灣藝術大學多媒系第十三屆系展「築格」－《CUBIC》</li>
+                            <li>2017 放視大賞 企劃類入圍－《迷途 STRAY》</li>
+                            <li>2017 第六屆 HPC 功夫國網3D動畫全國大賽 入圍－《迷途 STRAY》</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 個人簡介結束 -->
+
+
+        <!-- 第三頁-影片 -->
+        <div class="Index_P3">
+
+            <div class="row contentFrame h-100">
+                <div class="col-12 videoPage">
+                    <div id="videoPic">
+                        <a class="playIcon" target="_blank" href="https://www.youtube.com/watch?v=BdFi3k0DBwU&t=11s  ">
+                            <img class="" src="./image/webUse/Player_Icon.png">
+                        </a>
+                        <!-- <img src="./image/webUse/Video_Pic.jpg" alt=""></div> -->
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- 第三頁結束 -->
+
+        <!-- <img src="./image/webUse/WorksStray_Pic.jpg" alt=""> -->
+
+
+        <!-- 第四頁-作品頁 -->
+        <div class="Index_P4" id="gallery">
+            <div class="row contentFrame workSec">
+
+                <!-- 迷途 -->
+                <div class="col-3 intro">
+                    <div class="introAni">
+                        <a href="">
+                            <div class="works">
+                                <img src="./image/webUse/WorksStray_Pic.jpg" alt="">
+                                <div>
+                                    <span>迷途 STRAY
+                                        <hr></span>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- BT21 -->
+                <div class="col-3 intro">
+                    <div class="introAni">
+                        <a href="./Fanart.html">
+                            <div class="works">
+                                <img src="./image/webUse/ContaceL_Pic.png" alt="">
+                                <div>
+                                    <span>BT21 FANART
+                                        <hr></span>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 雷翁+糖罐 -->
+                <div class="col-3 intro ">
+                    <div class="introAni">
+                        <div class="works bg-danger">
+                            <img src="./image/webUse/WorksLeon_Pic.jpg" alt="">
+                            <div>
+                                <span>雷翁 LEON
+                                    <hr></span>
+                            </div>
+                        </div>
+
+
+                        <div class="works">
+                            <img src="./image/webUse/WorksSugar_Pic.jpg" alt="">
+                            <div>
+                                <span>糖罐危機 SUGAR AND SYRUP
+                                    <hr></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- 茉莉書店+影片 -->
+                <div class="col-3 intro">
+                    <div class="introAni">
+                        <div class="works">
+                            <img src="./image/webUse/WorksMolly_Pic.png" alt="">
+                            <div>
+                                <span>其它作品
+                                    <hr></span>
+                            </div>
+                        </div>
+
+
+                        <div class="works">
+                            <img src="./image/webUse/WorksH_Pic.png" alt="">
+                            <div>
+                                <span>作品影片
+                                    <hr></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div id="copyright">
+            <div>©2020 ALLISON CHEN</div>
+            <a href="https://www.facebook.com/Allison801107?ref=bookmarks" target="_blank">
+                <img class="copyrightIcon" src="./image/webUse/Facebook_Pic.png" alt=""></a>
+
+            <a href="https://twitter.com/allison801107">
+                <img class="copyrightIcon" src="./image/webUse/Twitter_Pic.png" alt="" target="_blank"></a>
+
+            <a href="https://www.instagram.com/allisonchen1107/?hl=zh-tw">
+                <img class="copyrightIcon" src="./image/webUse/IG_Pic.png" alt="" target="_blank"></a>
+        </div>
+
+
+    </div>
+    <script src="./javascript/mouseAni.js"></script>
+    <script src="./javascript/addClass.js"></script>
+    <script src="./javascript/indexOpen.js"></script>
+
+
+</body>
+
+</html>
